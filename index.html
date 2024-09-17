@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo advance</title>
+    <link rel="stylesheet" href="todo.css">
+    <script defer src="todo.js"></script>
+</head>
+<body>
+    <ul id="list">
+
+    </ul>
+
+    <form id="new-todo-form">
+        <label for="todo-input">New Todo</label>
+        <input type="text" id="todo-input" name="todo">
+        <button type="submit" >Add ToDo</button>
+    </form>
+    
+    <template id="list-item-template">
+        <li class="list-item">
+            <label class="list-item-label">
+              <input type="checkbox" data-list-item-checkbox name="check">
+              <span data-list-item-text></span>
+            </label>
+            <button data-button-delete>Delete</button>
+        </li>
+    </template>
+</body>
+</html>
